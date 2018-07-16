@@ -15,7 +15,7 @@ export class SetComponent implements OnInit {
 
   ngOnInit() {
     console.log("ngOnInit ran...");
-    this.artist = 'Progressive Awake';
+    // this.artist = 'Progressive Awake';
   }
 
 }
