@@ -27,7 +27,7 @@ export class SetComponent implements OnInit {
     this.song = {
       artist: 'adam k, soha',
       title: 'long distance',
-      length: 'original mix'
+      remix: 1
     }
   }
 }
