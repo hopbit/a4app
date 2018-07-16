@@ -9,6 +9,15 @@ export class SetComponent implements OnInit {
 
   artist:string;
   title:string;
+  year:number;
+  song: {
+    artist:string;
+    title:string;
+    remix:string;
+    length:string;
+    youtubeUrl:string;
+    spotifyUrl:string;
+  }
 
   constructor() { 
     console.log("constructor ran...");
