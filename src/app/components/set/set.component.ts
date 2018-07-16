@@ -8,10 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class SetComponent implements OnInit {
 
   artist = 'Progressive Awake';
-  
-  constructor() { }
+
+  constructor() { 
+    console.log("constructor ran...");
+  }
 
   ngOnInit() {
+    console.log("ngOnInit ran...");
   }
 
 }
