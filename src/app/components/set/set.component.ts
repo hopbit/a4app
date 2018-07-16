@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SetComponent implements OnInit {
 
-  artist:string = 'Progressive Awake';
+  artist:string;
 
   constructor() { 
     console.log("constructor ran...");
@@ -15,6 +15,7 @@ export class SetComponent implements OnInit {
 
   ngOnInit() {
     console.log("ngOnInit ran...");
+    this.artist = 'Progressive Awake';
   }
 
 }
