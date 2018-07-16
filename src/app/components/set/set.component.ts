@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class SetComponent implements OnInit {
 
   artist:string;
+  title:string;
 
   constructor() { 
     console.log("constructor ran...");
@@ -16,7 +17,7 @@ export class SetComponent implements OnInit {
   ngOnInit() {
     console.log("ngOnInit ran...");
     this.artist = 'Progressive Awake';
-    console.log("Just checking autosave in VS Code");
+    this.title = "It’s in my soul (June 2008)";
   }
 
 }
