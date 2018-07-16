@@ -17,7 +17,7 @@ export class SetComponent implements OnInit {
   ngOnInit() {
     console.log("ngOnInit ran...");
     this.artist = 'Progressive Awake';
-    this.title = "It’s in my soul (June 2008)";
+    this.title = 11;
   }
 
 }
