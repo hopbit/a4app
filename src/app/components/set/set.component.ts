@@ -10,6 +10,7 @@ export class SetComponent implements OnInit {
   artist:string;
   title:string;
   year:number;
+  url:string;
   tracks:Track[];
  
   constructor() { 
@@ -20,6 +21,8 @@ export class SetComponent implements OnInit {
     console.log("ngOnInit ran...");
     this.artist = 'Progressive Awake';
     this.title = "It’s in my soul (June 2008)";
+    this.year = 2008;
+    this.url = "https://hopbit.github.io/DJ/progressive-awake/its-in-my-soul-june-2008.html"
     this.tracks = [
       { artist: 'adam k, soha', title: 'long distance', remix: 'original mix', order: 1},
       { artist: 'ercola, heikki l', title: 'deep at night', remix: 'adam k & soha remix', order: 2},
