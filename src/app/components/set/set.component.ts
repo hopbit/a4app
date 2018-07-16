@@ -10,12 +10,8 @@ export class SetComponent implements OnInit {
   artist:string;
   title:string;
   year:number;
-  song:{
-    artist:string;
-    title:string;
-    remix:string;
-  }
-
+  track:Track;
+ 
   constructor() { 
     console.log("constructor ran...");
   }
@@ -24,10 +20,16 @@ export class SetComponent implements OnInit {
     console.log("ngOnInit ran...");
     this.artist = 'Progressive Awake';
     this.title = "It’s in my soul (June 2008)";
-    this.song = {
+    this.track = {
       artist: 'adam k, soha',
       title: 'long distance',
       remix: 'original mix'
     }
   }
+}
+
+interface Track {
+  artist: string;
+  title: string;
+  remix: string;
 }
