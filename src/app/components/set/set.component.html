@@ -12,4 +12,9 @@
     here</a>.
 </p>
 
-<p>{{tracks}}</p>
+<p>Couple of tracks I've used to create this compilation:</p>
+<ul>
+  <li *ngFor="let t of tracks">
+    {{t.artist}} - {{t.title}} ({{t.remix}})
+  </li>
+</ul>
