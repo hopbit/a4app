@@ -21,9 +21,9 @@ export class SetComponent implements OnInit {
     this.artist = 'Progressive Awake';
     this.title = "It’s in my soul (June 2008)";
     this.tracks = [
-      { artist: 'adam k, soha', title: 'long distance', remix: 'original mix'},
-      { artist: 'ercola, heikki l', title: 'deep at night', remix: 'adam k & soha remix'},
-      { artist: 'glenn morrison', title: 'no sudden moves', remix: 'original mix'},
+      { artist: 'adam k, soha', title: 'long distance', remix: 'original mix', order: 1},
+      { artist: 'ercola, heikki l', title: 'deep at night', remix: 'adam k & soha remix', order: 2},
+      { artist: 'glenn morrison', title: 'no sudden moves', remix: 'original mix', order: 3},
     ]
   }
 }
@@ -32,4 +32,5 @@ interface Track {
   artist: string;
   title: string;
   remix: string;
+  order: number;
 }
