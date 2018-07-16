@@ -2,10 +2,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { SetComponent } from './components/set/set.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SetComponent
   ],
   imports: [
     BrowserModule
