@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SetComponent implements OnInit {
 
-  artist:string;
+  artist:string = 'Quantum Energy';
 
   constructor() { 
     console.log("constructor ran...");
