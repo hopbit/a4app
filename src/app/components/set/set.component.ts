@@ -32,6 +32,14 @@ export class SetComponent implements OnInit {
 
   onClick() {
     console.log('My super button was clicked');
+    this.title = "It's in my soule 2 (July 2008)";
+    // this.year stays the same
+    this.url = "https://hopbit.github.io/DJ/progressive-awake/its-in-my-soul-2-july-2008.html"
+    this.tracks = []; // clear tracks
+  }
+
+  tracksVisible() {
+    return this.tracks != null && this.tracks.length > 0;
   }
 }
 
