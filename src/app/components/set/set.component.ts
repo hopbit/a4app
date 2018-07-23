@@ -12,8 +12,8 @@ export class SetComponent implements OnInit {
   year:number;
   url:string;
   tracks:Track[];
- 
-  constructor() { 
+
+  constructor() {
     console.log("constructor ran...");
   }
 
@@ -28,6 +28,10 @@ export class SetComponent implements OnInit {
       { artist: 'ercola, heikki l', title: 'deep at night', remix: 'adam k & soha remix', order: 2},
       { artist: 'glenn morrison', title: 'no sudden moves', remix: 'original mix', order: 3},
     ]
+  }
+
+  onClick() {
+    console.log('My super button was clicked');
   }
 }
 
