@@ -13,10 +13,10 @@
     here</a>.
 </p>
 
+<button (click)="onClick()" *ngIf="tracksVisible()">Show the name of the second set.</button>
 <p *ngIf="tracksVisible()">Couple of tracks I've used to create this compilation:</p>
 <ul>
   <li *ngFor="let t of tracks; let i = index">
     {{i}}. {{t.artist}} - {{t.title}} ({{t.remix}})
   </li>
 </ul>
-<button (click)="onClick()" *ngIf="tracksVisible()">Show the name of the second set.</button>
