@@ -23,6 +23,8 @@
 <p *ngIf="tracksVisible()">Couple of tracks I've used to create this compilation:</p>
 <ul>
   <li *ngFor="let t of tracks; let i = index">
-    {{i}}. {{t.artist}} - {{t.title}} <span *ngIf="remixVisible(t.remix)">({{t.remix}})</span>
+    {{i}}. {{t.artist}} - {{t.title}}
+    <span *ngIf="remixVisible(t.remix)">({{t.remix}})</span>
+    <button (click)="deleteTrack(t)">X</button>
   </li>
 </ul>
