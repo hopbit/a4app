@@ -44,6 +44,17 @@ export class SetComponent implements OnInit {
   tracksVisible() {
     return this.tracks != null && this.tracks.length > 0;
   }
+
+  remixVisible(remix) {
+    console.log(`remix: ${remix}`);
+    return remix != null;
+  }
+
+  addNewTrack(newTrack) {
+    console.log(`newTrack: ${newTrack}`);
+    this.tracks.unshift({artist: 'Unknown', title: newTrack, remix: null, order: this.tracks.length})
+    return false;
+  }
 }
 
 interface Track {

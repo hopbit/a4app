@@ -14,9 +14,15 @@
 </p>
 
 <button (click)="onClick()" *ngIf="tracksVisible()">Show the name of the second set.</button>
+<form (submit)="addNewTrack(newTrack.value)">
+  <div>
+    <label for="newTrack">Track</label>
+    <input type="text" #newTrack>
+  </div>
+</form>
 <p *ngIf="tracksVisible()">Couple of tracks I've used to create this compilation:</p>
 <ul>
   <li *ngFor="let t of tracks; let i = index">
-    {{i}}. {{t.artist}} - {{t.title}} ({{t.remix}})
+    {{i}}. {{t.artist}} - {{t.title}} <span *ngIf="remixVisible(t.remix)">({{t.remix}})</span>
   </li>
 </ul>
